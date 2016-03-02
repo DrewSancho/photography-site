@@ -374,14 +374,14 @@ th {
   width: 50%;
   height: 100px;
   position: relative; }
-  @media (min-width: px) {
+  @media (min-width: 850px) {
     .header-left {
       float: left;
       width: 50%; } }
 
 .header-right {
   float: right; }
-  @media (min-width: px) {
+  @media (min-width: 850px) {
     .header-right {
       float: right;
       height: 100px;
@@ -416,7 +416,7 @@ body {
 .main {
   max-width: 500px;
   margin: 0 auto; }
-  @media (min-width: px) {
+  @media (min-width: 850px) {
     .main {
       margin: 0 auto; } }
 
@@ -479,7 +479,7 @@ body {
   font-size: 20px;
   color: #9d9d9d;
   list-style-type: none; }
-  @media (min-width: px) {
+  @media (min-width: 850px) {
     .list {
       position: absolute;
       left: 100%;

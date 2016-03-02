@@ -6,7 +6,7 @@ $centered: 0 auto;
 }
 
 @mixin tablet{
-    @media (min-width: px) {
+    @media (min-width: 850px) {
         @content;
     }
 }
