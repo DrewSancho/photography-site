@@ -1,0 +1,186 @@
+@import "components/normalize";
+@import "components/variables";
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+.name {
+    font-size: 20px;
+    text-align: right;
+    display: inline-block;
+}
+
+.header-left {
+    @include column(2, 3);
+    @include tablet{
+        @include column (1, 2);
+    }
+    float: left;
+    width: 50%;
+    height: 100px;
+    position: relative;
+}
+
+.header-right {
+    @include tablet {
+        float: right;
+        height: 100px;
+        text-align: right;
+        padding: 20px;
+    }
+    float: right;
+
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.contact, .about {
+    color: #504b4f;
+    font-size: 20px;
+}
+
+.name {
+    clear: both;
+    color: #f2f2f2;
+    position: absolute;
+    left: 270px;
+    top: 20px;
+}
+
+.type {
+    color: #504b4f;
+}
+
+
+body {
+    background-color: #202020;
+    font-family: helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.main {
+    max-width: 500px;
+    margin: $centered;
+    // @include column (1, 1);
+    @include tablet {
+        // @include column (1, 1);
+        margin: $centered;
+    }
+}
+
+.logo {
+    width: 150px;
+    margin: $centered;
+}
+
+.main-image {
+    margin: $centered;
+    background-size: 150px 150px;
+    background-image: url("../images/photographer.jpg");
+    height: 150px;
+    position:relative;
+    border-radius: 50%;
+    background-position: center center;
+    -webkit-filter: grayscale(100%);
+     filter: grayscale(100%);
+     opacity: .25;
+     margin-bottom: 50px;
+}
+
+// .logo {
+//     margin: $centered;
+//     opacity: .25;
+//      -webkit-filter: grayscale(100%);
+//      filter: grayscale(100%);
+// }
+
+.overlaid-image img{
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    opacity: 100%;
+}
+
+.shot-type {
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 24px;
+    bottom:-35px;
+    left: 20px;
+    color: #f2f2f2;
+}
+
+.work {
+    color: #ff263a;
+}
+
+.pic {
+    @include tablet {
+        // @include column (2, 3);
+    };
+    // @include column(2, 3);
+    margin: $centered;
+    img {
+        width: 100%;
+    }
+    position: relative;
+}
+
+.text {
+    font-size: 24px;
+    color: #9d9d9d;
+    margin-bottom: 40px;
+}
+.date {
+    color: #504b4f;
+    font-size: 16px;
+}
+
+.list {
+    @include tablet {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 200px;
+        padding-bottom: 5px;
+    }
+    font-size: 20px;
+    color: #9d9d9d;
+    list-style-type: none;
+}
+
+.camera {
+    color: #ff263a;
+    list-style-image: url('../images/camera.png');
+}
+
+.shutter {
+    font-style: oblique;
+    list-style-image: url('../images/shutter.png');
+}
+
+.eye {
+    list-style-image: url('../images/eye.png');
+}
+
+.timer {
+    list-style-image: url('../images/timer.png');
+}

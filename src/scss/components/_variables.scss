@@ -1,0 +1,12 @@
+$centered: 0 auto;
+
+@mixin column($width, $row-width) {
+    float: left;
+    width: $width / $row-width * 100%;
+}
+
+@mixin tablet{
+    @media (min-width: px) {
+        @content;
+    }
+}
